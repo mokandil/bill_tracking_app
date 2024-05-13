@@ -1,4 +1,6 @@
-// Define the Bill structure and its methods
+use serde::{Deserialize, Serialize};
+
+#[derive(Serialize, Deserialize, Clone)]
 pub struct Bill {
     pub id: usize,
     pub description: String,
